@@ -1,20 +1,20 @@
-import 'package:ecomerce/screens/advpages2.dart';
+import 'package:ecomerce/screens/advpages3.dart';
 import 'package:ecomerce/widget/advtemplt.dart';
 import 'package:flutter/material.dart';
 
-class Advpages extends StatelessWidget {
-  const Advpages({super.key});
+class Advpages2 extends StatelessWidget {
+  const Advpages2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Advtemplt(
-        name: Advpages2(),
-        imgASS: "assets/pexels-nida-kurt-5079840-12750409 (1).jpg",
-        TitText: '20% Discount',
+        name: Advpages3(),
+        imgASS: "assets/pexels-margarita-141441249-16008684.jpg",
+        TitText: 'Take advantage',
         Footer:
             'Publish up your selfies to make yourself more beautiful with this app.',
-        subTitle: 'New Arrival Product',
+        subTitle: 'Of The Offer Shopping',
         Icona: Icon(Icons.remove_circle_outline),
       ),
     );
