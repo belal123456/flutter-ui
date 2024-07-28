@@ -30,6 +30,9 @@ class Advtemplt extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          SizedBox(
+            height: 40,
+          ),
           ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Image.asset(
@@ -39,18 +42,18 @@ class Advtemplt extends StatelessWidget {
               fit: BoxFit.fill,
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 60),
           Text(
             TitText,
             style: const TextStyle(
-              fontSize: 24,
+              fontSize: 40,
               fontWeight: FontWeight.bold,
             ),
           ),
           Text(
             subTitle,
             style: const TextStyle(
-              fontSize: 20,
+              fontSize: 40,
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -62,7 +65,9 @@ class Advtemplt extends StatelessWidget {
               color: Colors.grey,
             ),
           ),
-          const SizedBox(height: 16),
+          Spacer(
+            flex: 1,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -76,10 +81,17 @@ class Advtemplt extends StatelessWidget {
                     return name;
                   }));
                 },
-                icon: const Icon(Icons.arrow_forward, color: Colors.black),
+                icon: const Icon(
+                  Icons.arrow_forward,
+                  color: Colors.black,
+                  size: 40,
+                ),
               ),
             ],
           ),
+          SizedBox(
+            height: 23,
+          )
         ],
       ),
     );

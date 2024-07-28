@@ -25,7 +25,7 @@ class loginBtn extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: Container(
           alignment: Alignment.center,
-          width: 300,
+          width: 350,
           height: 50,
           decoration: BoxDecoration(
               border: Border.all(color: Colors.white),
