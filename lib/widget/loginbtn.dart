@@ -1,4 +1,5 @@
 import 'package:ecomerce/screens/advPages.dart';
+import 'package:ecomerce/screens/success.dart';
 import 'package:flutter/material.dart';
 
 class loginBtn extends StatelessWidget {
@@ -31,11 +32,18 @@ class loginBtn extends StatelessWidget {
               border: Border.all(color: Colors.white),
               borderRadius: BorderRadius.circular(24),
               color: col),
-          child: Text(
-            inbut,
-            style: TextStyle(
-              color: textCol,
-              fontSize: 18,
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return sucss();
+              }));
+            },
+            child: Text(
+              inbut,
+              style: TextStyle(
+                color: textCol,
+                fontSize: 18,
+              ),
             ),
           ),
         ),
